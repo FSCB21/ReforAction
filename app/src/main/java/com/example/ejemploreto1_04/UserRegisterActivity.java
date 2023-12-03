@@ -52,16 +52,15 @@ public class UserRegisterActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Registro Exitoso", Toast.LENGTH_LONG).show();
 
                     System.out.println("OK!");
-                    /*try {
+                    try {
                         sleep(500);
                         startActivity(inicio);
                         finish();
                     }catch (Exception e){
                         throw new RuntimeException(e);
-                    }*/
+                    }
 
                 }else{
-                    Toast.makeText(UserRegisterActivity.this, "Hola!", Toast.LENGTH_SHORT).show();
                     Toast.makeText(getApplicationContext(),"ALgunos de los campos estan vacios", Toast.LENGTH_LONG).show();
                 }
 

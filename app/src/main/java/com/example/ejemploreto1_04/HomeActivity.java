@@ -18,12 +18,21 @@ Button recommendations,statistics,registerItem;
         statistics=findViewById(R.id.button2);
         registerItem=findViewById(R.id.button4);
 
+        Intent receive= getIntent();
+        String idUser= receive.getStringExtra("idUser");
+
         Intent recomendaciones= new Intent(getApplicationContext(),
                 RecommendationActivity.class);
+        recomendaciones.putExtra("idUser", idUser);
+
         Intent estadisticas= new Intent(getApplicationContext(),
                 StatisticsActivity.class);
+        estadisticas.putExtra("idUser", idUser);
+
         Intent registrarItem= new Intent(getApplicationContext(),
                 ItemRegisterActivity.class);
+        registrarItem.putExtra("idUser", idUser);
+
 
         recommendations.setOnClickListener(new View.OnClickListener() {
             @Override
