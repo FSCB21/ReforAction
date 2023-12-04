@@ -12,18 +12,137 @@
 
     <ImageView
         android:id="@+id/imageView6"
+        android:layout_weight=".5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/reforaction" />
 
     <TextView
         android:id="@+id/textView5"
+        android:layout_weight=".5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Recomendaciones"
         android:textAlignment="center"
-        android:textSize="34sp"
+        android:textSize="28sp"
         android:textStyle="bold" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="200"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradiant_cart"
+                android:elevation="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Consejo de Cuidado"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewC1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="¡Felicidades por plantar árboles! Para asegurarte de que crezcan saludables, asegúrate de regarlos regularmente, especialmente durante los primeros meses. Evita el exceso de riego y observa la calidad del suelo para ajustar según sea necesario. Además, ten en cuenta las condiciones climáticas locales para adaptar el cuidado de las plantas."
+                    android:textColor="#223d29"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradiant_cart2"
+                android:elevation="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Datos Ambientales "
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewC2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="La calidad del aire en tu área es fundamental para la salud de tus árboles y del medio ambiente en general. Consulta los datos en tiempo real sobre la calidad del aire proporcionados por la agencia ambiental local. Recuerda que tus árboles contribuyen a mejorar la calidad del aire, ¡sigue haciendo la diferencia!"
+                    android:textColor="#223d29"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradiant_cart"
+                android:elevation="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Consejo de Cuidado"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewC3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="¡Enhorabuena por tu contribución a la reforestación! Para garantizar el éxito de tus árboles, ten en cuenta la temporada. En primavera, observa los brotes y ajusta el riego en consecuencia. Durante el verano, protege las plantas del calor extremo y proporciona sombra si es necesario. En otoño, retira hojas caídas para prevenir enfermedades. Recuerda que cada estación tiene sus propias necesidades, ¡así que adapta tu cuidado en consecuencia!"
+                    android:textColor="#223d29"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
